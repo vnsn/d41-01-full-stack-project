@@ -3,7 +3,7 @@ import React from 'react';
 function Header(props) {
     return (
         <header>
-          <h1>Best Advice!</h1>
+          <h1>Words To Live By</h1>
         </header>
     );
 }

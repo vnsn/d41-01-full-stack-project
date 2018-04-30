@@ -41,17 +41,18 @@ class AddForm extends Component {
         const { author, summary } = this.state.inputs;
         return (
             <section className="add-advice">
-            <h2>Add your favorite advice</h2>
+                <h2>Add your favorite</h2>
                 <form onSubmit={this.handleSubmit} className="add-form">
-                    <p>
-                        <label htmlFor="author">Author</label>
-                        <input onChange={this.handleChange} name="author" id="author" value={author} type="text" />
-                    </p>
                     <p>
                         <label htmlFor="summary">Advice</label>
                         <textarea onChange={this.handleChange} name="summary" id="summary" value={summary} />
                     </p>
-                    <button>Post</button>
+                    <p>
+                        <label htmlFor="author">From</label>
+                        <input onChange={this.handleChange} name="author" id="author" value={author} type="text" placeholder="Who gave you that advice?" />
+                    </p>
+
+                    <button>Submit</button>
                 </form>
             </section>
         )

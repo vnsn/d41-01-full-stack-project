@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    font-size: 1rem;
     background-color: whitesmoke;
     /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
     font-family: 'Montserrat', sans-serif;
@@ -64,6 +65,7 @@ button:focus {
 
 nav,
 footer {
+    font-size: 1rem;
     width: 100%;
     border-top: 1px solid #990000;
     border-bottom: 1px solid #990000;
@@ -97,12 +99,14 @@ a:hover {
 }
 
 .wrapper {
+    font-size: 1rem;
     display: grid;
     grid-template-rows: auto 1fr;
     justify-items: center;
 }
 
 header {
+    font-size: 1rem;    
     justify-self: stretch;
     text-align: center;
     background-color: #990000;
@@ -116,51 +120,65 @@ header h1 {
     color: white;
 }
 
-.about {
-    padding: 1em;
-
-    display: grid;
-    grid-template:  1fr
-                        / 30% 70%;
-
-    background-image: url("./App/images/montylov-373292-unsplash.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-clip: border-box;
-    background-origin: border-box;
-
-}
-
 main {
+    font-size: 1rem;    
+    min-height: 80vh;
     width: 100%;
     margin: 0;
+    background-color: #C9C8C7;
+    background-image: url("./App/images/montylov-373292-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-origin: border-box;
+    background-attachment: fixed;
 }
 
+.about {
+    font-size: 1rem;    
+    padding: 1em 20%;
+    /* min-height: 100vh; */
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-content {
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+
 .list {
+    font-size: 1rem;    
     margin: 0;
     padding: 1em;
-/* 
-    background-image: url("./App/images/montylov-373292-unsplash.jpg");
+
+    /* background-color: #C9C8C7; */
+    /* background-image: url("./App/images/montylov-373292-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-clip: border-box;
     background-origin: border-box; */
+
+    
+    background-blend-mode: soft-light;
     /* background-position: center; */
 }
 
 .add-advice {
-    padding: 1em;
+    padding: 1em 20%;
 }
 
 .add-form {
-    width: 100%;
+    padding: 1.5em;
+    background-color: whitesmoke;
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
-    padding: 1em 0;
 }
 
 .add-form input,
@@ -172,6 +190,7 @@ main {
 .add-form button {
     align-self: center;
     min-height: 3rem;
+    min-width: 4em;
     position: relative;
     top: 0.5em;
 }
@@ -193,11 +212,13 @@ main {
 
 .issue {
     border: 2px solid #990000;
+    /* border: 2px solid #212529; */
     margin: 1em;
     padding: 1em 0.5em;
     /* background-color: #212529; */
     background-color: #990000;
     /* opacity: .7; */
+
     color: white;
     display: grid;
     grid-template-columns: 10% 1fr;
@@ -342,8 +363,4 @@ input::placeholder {
         font-size: 3em;
     }
 
-    .add-form {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 }

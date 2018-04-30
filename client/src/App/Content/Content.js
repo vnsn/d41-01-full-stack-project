@@ -9,7 +9,7 @@ import Admin from "../Admin";
 
 function Content(props) {
     return (
-        <main className="content">
+        <main>
             <Switch>
                 <Route exact path="/" component={List} />
                 <Route path="/about" component={About} />
