@@ -5,7 +5,7 @@ function Footer(props) {
         <footer>
         <ul>
             <li>
-                    Made by <a href="http://www.linkedin.com/jvnsn/">Jen</a>
+                    Made by <a href="https://www.linkedin.com/in/jvnsn/">Jen</a>
                 </li>
                 <li>
                     <a href="http://www.github.com/vnsn/">
