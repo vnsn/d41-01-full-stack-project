@@ -5,6 +5,7 @@ const itemSchema = new Schema({
     author: String,
     title: String,
     summary: String,
+    type: String,
     votes: Number,
     comments: [String]
 });

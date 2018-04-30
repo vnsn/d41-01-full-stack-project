@@ -44,8 +44,7 @@ class CommentList extends Component {
     render() {
         const textList = this.props.comments.map((comment, index) => {
             return (
-                <li className="comment" key={comment + index}>{comment} </li>
-
+                <li key={comment + index}>{comment} </li>
             );
         })
 
@@ -53,11 +52,12 @@ class CommentList extends Component {
             <div className="comment-container">
                 <h3>Comments</h3>
 
-                <CommentForm {...this.props} />
-
                 <ul className="comment-list">
                     {textList}
                 </ul>
+
+                <CommentForm {...this.props} />
+
             </div>
         )
     }

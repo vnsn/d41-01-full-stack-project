@@ -46,7 +46,8 @@ class AdminCommentList extends Component {
             return (
                 <div className="comment" key={comment + index}>
 
-                    <button onClick={() => this.handleDelete(this.props._id, this.props, index)} className="del-button">DEL</button>
+                    <button onClick={() => this.handleDelete(this.props._id, this.props, index)} className="del-button"><i class="fas fa-trash-alt fa-2x fa-fw"></i></button>
+
 
                     <CommentEdit itemObj={this.props} editingIndex={index} editingText={comment} />
 
@@ -58,7 +59,7 @@ class AdminCommentList extends Component {
             <div className="comment-container">
                 <h3>Comments</h3>
 
-                <CommentForm {...this.props} />
+                {/* <CommentForm {...this.props} /> */}
 
                 {textList}
 
