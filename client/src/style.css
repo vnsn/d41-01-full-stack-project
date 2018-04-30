@@ -1,0 +1,349 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: whitesmoke;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    margin-bottom: 0.25em;
+    text-align: center;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Shrikhand', cursive;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    margin: 0.5em 0;
+    padding: 0.5em;
+    line-height: 1.5;
+}
+
+input,
+select,
+textarea {
+    margin: 0 0.5em;
+    padding: 0.5em;
+}
+
+input {
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+button {
+    /* height: 3em; */
+    /* max-width: 60px; */
+    border-radius: 20%;
+    /* margin: 0 0.5em; */
+    /* padding: 1px 7px 2px; */
+    /* padding: 1px 4px; */
+}
+
+button:focus {
+    outline: none;
+}
+
+nav,
+footer {
+    width: 100%;
+    border-top: 1px solid #990000;
+    border-bottom: 1px solid #990000;
+    padding: 1em;
+}
+
+nav ul,
+footer ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li,
+footer li {
+    list-style: none;
+    margin: 0 0.5em;
+}
+
+footer ul {
+    justify-content: center;
+}
+
+a,
+a:visited {
+    text-decoration-line: none;
+    color: #990000;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-items: center;
+}
+
+header {
+    justify-self: stretch;
+    text-align: center;
+    background-color: #990000;
+    margin: 0;
+    padding: 1em;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: white;
+}
+
+.about {
+    padding: 1em;
+
+    display: grid;
+    grid-template:  1fr
+                        / 30% 70%;
+
+    background-image: url("./App/images/montylov-373292-unsplash.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: border-box;
+
+}
+
+main {
+    width: 100%;
+    margin: 0;
+}
+
+.list {
+    margin: 0;
+    padding: 1em;
+/* 
+    background-image: url("./App/images/montylov-373292-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-clip: border-box;
+    background-origin: border-box; */
+    /* background-position: center; */
+}
+
+.add-advice {
+    padding: 1em;
+}
+
+.add-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.add-form input,
+.add-form textarea {
+    min-height: 3rem;
+    width: 100%;
+}
+
+.add-form button {
+    align-self: center;
+    min-height: 3rem;
+    position: relative;
+    top: 0.5em;
+}
+
+.add-form label {
+    /* display: block; */
+    margin: 0 0.5em;
+}
+
+.add-form p {
+    margin: 0 0.5em;
+    flex-grow: 1;
+}
+
+.issue-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.issue {
+    border: 2px solid #990000;
+    margin: 1em;
+    padding: 1em 0.5em;
+    /* background-color: #212529; */
+    background-color: #990000;
+    /* opacity: .7; */
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas: 
+    "isum isum isum" 
+    "inam inam inam " 
+    "comm comm comm";
+    grid-row-gap: 1ch;
+    grid-column-gap: 3ch;
+    align-items: center;
+}
+
+
+.admin-issue {
+    border: 2px solid black;
+    margin: 1em;
+    padding: 1em 0.5em;
+    background-color: #212529;
+    opacity: .7;
+    color: white;
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-areas: 
+    "inam inam idel" 
+    ". isum isum " 
+    "comm comm comm";
+    grid-row-gap: 1ch;
+    grid-column-gap: 2ch;
+    align-items: center;
+}
+
+
+
+.votes {
+    grid-area: vote;
+    align-self: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.votes button {
+    color: #990000;
+}
+
+.votes p {
+    line-height: 1;
+    margin: 0.25em;
+    padding: 0;
+}
+
+.item-author {
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 1ch;
+    grid-area: inam;
+}
+
+.del-button {
+    display: inline;
+    color: #990000;
+    margin: 0 0.5em;
+    grid-area: idel;
+
+    height: 3em;
+    max-width: 60px;
+    border-radius: 20%;
+    margin: 0 0.5em;
+    padding: 1px 7px 2px;
+    padding: 1px 4px;
+}
+
+
+
+.item-summary {
+    grid-area: isum;
+}
+
+.comment-container {
+    grid-area: comm;
+    padding: 1em 0;
+}
+
+.comment-container button, .add-form button {
+        height: 3em;
+        max-width: 60px;
+        border-radius: 20%;
+        margin: 0 0.5em;
+        padding: 1px 7px 2px;
+
+}
+
+.comment-container h3 {
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+.comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-form input {
+    flex-grow: 1;
+}
+
+.comment-container ul {
+    display: unset;
+}
+
+.comment-container li {
+    margin: 1em 0;
+    list-style: none;
+}
+
+.comment-edit {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-edit input {
+    flex-grow: 1;
+}
+
+input {
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: blue;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+@media only screen and (min-width: 500px) {
+    h2 {
+        font-size: 3em;
+    }
+
+    .add-form {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
