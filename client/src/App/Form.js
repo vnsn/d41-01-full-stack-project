@@ -13,8 +13,9 @@ class Form extends Component {
                 type: props.type || "",
                 refUrl: props.refUrl || "",
                 imgUrl: props.imgUrl || "",
-                flagged: props.flagged || "",
-                votes: props.votes || 0
+                flagged: props.flagged || false,
+                votes: props.votes || 0,
+                // comments: props.comments || []
             },
             readyToRedirect: false,
         }
@@ -50,18 +51,31 @@ class Form extends Component {
             return <Redirect to={this.props.path} />
         }
 
-        const { author, summary, type, refUrl, imgUrl, flagged } = this.state.inputs;
+        const { author, summary, type, refUrl, imgUrl, category, sharer } = this.state.inputs;
 
         return (
             <form onSubmit={this.handleSubmit} className="item-form">
 
-                <p>Best Advice or Worst?
+                <p>
+                    <label htmlFor="type">Best Advice or Worst?</label>
                     <select onChange={this.handleChange} name="type" id="type" value={type}>
                         <option value="none">Pick one</option>
                         <option value="best">Best</option>
                         <option value="worst">Worst</option>
                     </select>
                 </p>
+
+                <p>
+                    <label htmlFor="category">Category:</label>
+                    <select onChange={this.handleChange} name="category" id="category" value={category}>
+                        <option value="none">Pick one</option>
+                        <option value="leading">Leading</option>
+                        <option value="parents">Parents</option>
+                        <option value="process">Process</option>
+                        <option value="life">Life</option>
+                    </select>
+                </p>
+
                 <p>
                     <label htmlFor="summary">Advice <span className="required">*</span></label>
                     <textarea onChange={this.handleChange} name="summary" id="summary" value={summary} placeholder="What's the advice?" />
@@ -72,11 +86,16 @@ class Form extends Component {
                 </p>
 
                 <p>
+                    <label htmlFor="sharer">Your Name</label>
+                    <input onChange={this.handleChange} name="sharer" id="sharer" value={sharer} type="text" placeholder="Your name (optional)" />
+                </p>
+
+                <p>
                     <label htmlFor="refUrl">Website</label>
                     <input onChange={this.handleChange} name="refUrl" id="refUrl" value={refUrl} type="text" placeholder="Website (optional)" />
                 </p>
 
-               <p>
+                <p>
                     <label htmlFor="imgUrl">Image Link</label>
                     <input onChange={this.handleChange} name="imgUrl" id="imgUrl" value={imgUrl} type="text" placeholder="Link to image related to the advice (optional)" />
                 </p>

@@ -12,6 +12,8 @@ function About(props) {
 
       <p>Photo of <a href="https://unsplash.com/photos/ktZZiHb-GoI">San Deigo</a> by <a href="https://unsplash.com/@montylov">MontyLov</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
 
+      <p>Most advice entries came from <a href="http://fortune.com/2015/09/24/40-under-40-best-advice-2015/">Fortune.com piece</a> on the best advice given to members of their "40 Under 40" list.</p>
+
       {/* <p>Photo of <a href="https://unsplash.com/photos/qr7SFqhrW0c">Venice</a> by <a href="https://unsplash.com/@adspedia">Val Vesa</a> on <a href="https://unsplash.com/">Unsplash</a>.</p>
 
       <p>Photo of <a href="https://unsplash.com/photos/2VDa8bnLM8c">Lake Carezza</a> by <a href="https://unsplash.com/@riccardoch">Riccardo Chiarini</a> on <a href="https://unsplash.com/">Unsplash</a>.</p> */}

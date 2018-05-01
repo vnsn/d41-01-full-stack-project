@@ -18,7 +18,9 @@ const itemSchema = new Schema({
     refUrl: String,
     imgUrl: String,
     flagged: Boolean,
+    category: String,
     votes: Number,
+    sharer: String,
     comments: [String]
 },{timestamps: true});
 
