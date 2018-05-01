@@ -15,6 +15,7 @@ class Form extends Component {
                 imgUrl: props.imgUrl || "",
                 flagged: props.flagged || false,
                 votes: props.votes || 0,
+                sharer: props.sharer || ""
                 // comments: props.comments || []
             },
             readyToRedirect: false,

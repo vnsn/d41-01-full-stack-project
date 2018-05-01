@@ -30,13 +30,11 @@ class List extends Component {
 
     render() {
         const { data } = this.props;
-
         const itemList = data.sort((a, b) => b.votes - a.votes).map(item => {
-            console.log(item);
             return (
                 <div className="issue" key={item._id} style={(item.type === "best") ? this.style.red : this.style.gray}>
                     <div className="janky">
-                        <p className="item-category">{item.category}</p>
+                        <h3 className="item-category">{item.category}</h3>
                         <p className="item-summary">"{item.summary}"</p>
                         <p className="item-author"> ~ {item.author} </p>
                         <p className="item-sharer">Shared by: <a href={item.refUrl}>{item.sharer}</a></p>
