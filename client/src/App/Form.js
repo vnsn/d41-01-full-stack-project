@@ -11,6 +11,9 @@ class Form extends Component {
                 title: props.title || "",
                 summary: props.summary || "",
                 type: props.type || "",
+                refUrl: props.refUrl || "",
+                imgUrl: props.imgUrl || "",
+                flagged: props.flagged || "",
                 votes: props.votes || 0
             },
             readyToRedirect: false,
@@ -47,7 +50,7 @@ class Form extends Component {
             return <Redirect to={this.props.path} />
         }
 
-        const { author, summary, type } = this.state.inputs;
+        const { author, summary, type, refUrl, imgUrl, flagged } = this.state.inputs;
 
         return (
             <form onSubmit={this.handleSubmit} className="item-form">
@@ -60,14 +63,24 @@ class Form extends Component {
                     </select>
                 </p>
                 <p>
-                    <label htmlFor="summary">Advice</label>
+                    <label htmlFor="summary">Advice <span className="required">*</span></label>
                     <textarea onChange={this.handleChange} name="summary" id="summary" value={summary} placeholder="What's the advice?" />
                 </p>
                 <p>
-                    <label htmlFor="author">From</label>
+                    <label htmlFor="author">From <span className="required">*</span></label>
                     <input onChange={this.handleChange} name="author" id="author" value={author} type="text" placeholder="Who gave it?" />
                 </p>
 
+                <p>
+                    <label htmlFor="refUrl">Website</label>
+                    <input onChange={this.handleChange} name="refUrl" id="refUrl" value={refUrl} type="text" placeholder="Website (optional)" />
+                </p>
+
+               <p>
+                    <label htmlFor="imgUrl">Image Link</label>
+                    <input onChange={this.handleChange} name="imgUrl" id="imgUrl" value={imgUrl} type="text" placeholder="Link to image related to the advice (optional)" />
+                </p>
+                <p className="required">* Fields marked with an asterisk are required.</p>
                 <button>Submit</button>
             </form>
         )

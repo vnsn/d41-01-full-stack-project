@@ -15,7 +15,7 @@ function Content(props) {
                 <Route path="/about" component={About} />
                 <Route path="/add" component={AddAdvice} />
                 <Route path="/admin" component={Admin} />
-                {/* <Route path="/movie/:id/:title/:release_date" component={Game} /> */}
+                {/* <Route path="/advice/:id" component={Item} /> */}
             </Switch>
         </main>
     );

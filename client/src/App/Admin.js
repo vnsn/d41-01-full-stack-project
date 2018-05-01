@@ -19,10 +19,6 @@ class Admin extends Component {
 
     render() {
         const { data } = this.props;
-
-console.log("I'm the Admin page")
-console.log(this.props)
-
         const itemList = data.sort((a, b) => b.votes - a.votes).map(item => {
             return (
                 <div className="admin-issue" key={item._id}>

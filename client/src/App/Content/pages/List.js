@@ -14,6 +14,7 @@ class List extends Component {
           },
           gray: {
             backgroundColor: "#212529",
+            opacity: 0.7,
             borderColor: "#212529"
           }
         }
@@ -31,6 +32,7 @@ class List extends Component {
         const { data } = this.props;
 
         const itemList = data.sort((a, b) => b.votes - a.votes).map(item => {
+            console.log(item);
             return (
                 <div className="issue" key={item._id} style={ (item.type === "best") ? this.style.red : this.style.gray}>
                     {/* <div className="votes">
@@ -47,7 +49,7 @@ class List extends Component {
 
                     <h3 className="item-summary">"{item.summary}"</h3>
                     <p className="item-author"> ~ {item.author}</p>
-
+                    {/* <p>{new Date(item.createdAt).toLocaleDateString()}</p> */}
                     <CommentList {...item} />
 
                 </div>
