@@ -5,6 +5,19 @@ import { getItems, deleteItem, editItem } from "../../redux/item-reducer";
 import CommentList from './Comments/CommentList';
 
 class List extends Component {
+    constructor() {
+        super()
+        this.style = {
+          red: {
+            backgroundColor: "#990000",
+            borderColor: "#990000"
+          },
+          gray: {
+            backgroundColor: "#212529",
+            borderColor: "#212529"
+          }
+        }
+      }
     componentDidMount() {
         this.props.getItems();
     }
@@ -19,7 +32,7 @@ class List extends Component {
 
         const itemList = data.sort((a, b) => b.votes - a.votes).map(item => {
             return (
-                <div className="issue" key={item._id}>
+                <div className="issue" key={item._id} style={ (item.type === "best") ? this.style.red : this.style.gray}>
                     {/* <div className="votes">
                         <button onClick={() => this.handleVote(item._id, item, 1)} value="1" className="up-button"><i class="fas fa-caret-up fa-fw fa-2x"></i></button>
 

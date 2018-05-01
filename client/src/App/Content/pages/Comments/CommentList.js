@@ -2,17 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { editItem, deleteComment } from '../../../redux/item-reducer';
 import CommentForm from './CommentForm';
-import CommentEdit from './CommentEdit';
 
 class CommentList extends Component {
     constructor(props) {
         super(props);
-        // this.initialState = {
-        //     inputs: {
-        //         commentText: props.commentText || "",
-        //     }
-        // }
-        // this.state = this.initialState;
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmitComment = this.handleSubmitComment.bind(this);
         this.handleDelete = this.handleDelete.bind(this);

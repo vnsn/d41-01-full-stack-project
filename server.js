@@ -22,7 +22,7 @@ app.use("/items", itemRouter);
 
 
 // database
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/posts", err => {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/advice", err => {
     if(err) throw (err);
     console.log(`Connected to MongoDB via Mongoose on port 27017.`)
 });

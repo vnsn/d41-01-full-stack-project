@@ -9,7 +9,7 @@ function Footer(props) {
                 </li>
                 <li>
                     <a href="http://www.github.com/vnsn/">
-                        <i class="fab fa-github-alt fa-2x"></i>
+                        <i className="fab fa-github-alt fa-2x"></i>
                     </a>
                 </li>
             </ul>

@@ -112,7 +112,7 @@ export const deleteItem = (id) => {
     }
 }
 
-export const editItem = (id, editedItem, commentEdit = false) => {
+export const editItem = (editedItem, id, commentEdit = false) => {
     return dispatch => {
         let url = '/items/' + id;
         if (commentEdit) url += "/comments";
