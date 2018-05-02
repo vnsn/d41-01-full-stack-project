@@ -28,17 +28,7 @@ class CommentForm extends Component {
     }
 
     handleSubmitComment(id, itemObj, newComment) {
-
-        console.log("the submit button pressed on adding a comment")
-
-        console.log(itemObj.comments)
-        
         itemObj.comments.push(newComment);
-        
-        console.log(itemObj.comments)
-        console.log(id)
-        console.log(itemObj)
-
         this.props.editItem(id, itemObj);
     }
 
