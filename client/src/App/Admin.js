@@ -19,7 +19,12 @@ class Admin extends Component {
 
     render() {
         const { data } = this.props;
-        const itemList = data.sort((a, b) => b.votes - a.votes).map(item => {
+
+        const itemList = data.sort((a, b) => {
+            const aDate = new Date(a.createdAt).getTime();
+            const bDate = new Date(b.createdAt).getTime();
+            return b.votes - a.votes || bDate - aDate;
+        }).map(item => {
             return (
                 <div className="admin-issue" key={item._id}>
 
