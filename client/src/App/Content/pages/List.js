@@ -18,7 +18,6 @@ class List extends Component {
                 opacity: 0.7,
                 borderColor: "#212529",
                 boxShadow: "10px 10px 5px black"
-                // boxShadow: "10px 10px 5px #212529"
             }
         }
     }
@@ -31,8 +30,8 @@ class List extends Component {
         const itemList = data.sort((a, b) => {
             const aDate = new Date(a.createdAt).getTime();
             const bDate = new Date(b.createdAt).getTime();
-            return bDate - aDate;
-        }).sort((a, b) => b.votes - a.votes).map(item => {
+            return b.votes - a.votes || bDate - aDate;
+        }).map(item => {
         
         const shareBlock = () => {
             if (item.sharer.length > 0 && item.refUrl.length > 0) {
