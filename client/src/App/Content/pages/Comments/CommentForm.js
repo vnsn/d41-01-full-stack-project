@@ -28,7 +28,6 @@ class CommentForm extends Component {
     }
 
     handleSubmitComment(id, itemObj, newComment) {
-
         itemObj.comments.push(newComment);
         this.props.editItem(id, itemObj);
     }
