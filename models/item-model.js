@@ -18,7 +18,10 @@ const itemSchema = new Schema({
     refUrl: String,
     imgUrl: String,
     flagged: Boolean,
-    category: String,
+    category: {
+        type: String,
+        default: "Life"
+    },
     votes: Number,
     sharer: String,
     comments: [String]

@@ -1,0 +1,500 @@
+  108  sudo chown -R $(whoami) -u student /usr/local/Cellar
+  109  mongo
+  110  git status
+  111  git status
+  112  de
+  113  ll
+  114  mkdir d39-01-rock-the-vote
+  115  cd d39-01-rock-the-vote/
+  116  npm install --save express
+  117  ll
+  118  npm init -y
+  119  ll
+  120  npm install --save mongoose
+  121  cd ..
+  122  ll
+  123  cd ..
+  124  ll
+  125  cd pro
+  126  cd projects/
+  127  ll
+  128  mv d30-api-project/ d30-01-api-project/
+  129  ll
+  130  gs
+  131  source ~/.bash_profile 
+  132  gs
+  133  clear
+  134  gs
+  135  ll
+  136  exit
+  137  npm start
+  138  nodemon server.js 
+  139  body-parser -v
+  140  npm body-parser -v
+  141  npm install --save axios
+  142  exit
+  143  cd client/
+  144  npm start
+  145  nodemon server.js 
+  146  nodemon server.js 
+  147  nodemon server.js 
+  148  nodemon server.js 
+  149  cd client
+  150  create-react-app .
+  151  npm install --save redux react-redux redux-thunk
+  152  npm start
+  153  npm start
+  154  npm install --save axios
+  155  npm start
+  156  da
+  157  de
+  158  cd ..
+  159  ll
+  160  git status
+  161  git add projects/d30-api-project
+  162  git add projects/d30-01-api-project/
+  163  git commit -m "changed folder name"
+  164  git status
+  165  git remote -v
+  166  git push
+  167  git status
+  168  git status
+  169  git add exercises/d38-01-crud-store/
+  170  git commit -m "learn mongoose"
+  171  git push
+  172  ll
+  173  cd exercises/
+  174  ll
+  175  mkdir d38-02-bounty-hunter-mongo
+  176  cd ..
+  177  git sttaus
+  178  git status
+  179  git status
+  180  git add exercises/d01-01-terminal-practice/
+  181  git commit -m "Day 1 Terminal Practice"
+  182  git push
+  183  git status
+  184  git add exercises/d02-02-silly-cia/
+  185  git commit -m "Day 2 Silly CIA"
+  186  git push
+  187  gs
+  188  ga
+  189  gc
+  190  ~/.bash_profile
+  191  source ~/.bash_profile
+  192  gs
+  193  ga exercises/d02-03-silly-cia2/
+  194  gs
+  195  gc "Day 2 Silly CIA 2"
+  196  gs
+  197  git push
+  198  gp
+  199  da
+  200  gs
+  201  cd
+  202  da
+  203  ga
+  204  da
+  205  source ~/.bash_profile
+  206  da
+  207  gs
+  208  gs
+  209  ga exercises/d02-06-css-wars/
+  210  gc "CSS Wars"
+  211  gp
+  212  gs
+  213  ga exercises/d02-07-newsies/
+  214  gc "Newsies"
+  215  gp
+  216  gs
+  217  ga exercises/d03-01-if-olympics/
+  218  gc "If Statement Olympics"
+  219  gp
+  220  gs
+  221  gs
+  222  ga exercises/d03-02-even-odd/
+  223  gc "Even / Odd Looping"
+  224  gs
+  225  ga exercises/d03-03-loops-practice/
+  226  gc "Loops and Arrays Practice"
+  227  gs
+  228  ga exercises/d03-04-social-js/
+  229  gc "Social.js"
+  230  gp
+  231  gs
+  232  ga exercises/d03-05-loop-olympics/
+  233  gc "Loop Olympics"
+  234  gs
+  235  ga exercises/d04-01-color-grid/
+  236  gc "Color Grid"
+  237  ga exercises/d04-02-functions/
+  238  gc "Functions"
+  239  gp
+  240  gs
+  241  gs
+  242  gs
+  243  ga exercises/d07-05-practice/
+  244  gc "Practice Problems"
+  245  gp
+  246  gs
+  247  ga exercises/d10-03-mouse-debug/
+  248  gc "Mouse Debug"
+  249  gp
+  250  gs
+  251  ga exercises/d12-03-array-sort/
+  252  gc "Array Sort Practice"
+  253  gp
+  254  gs
+  255  ga exercises/d13-01-json-deli/
+  256  gc "JSON's deli"
+  257  gp
+  258  gs
+  259  ga exercises/d15-02-css-grid/
+  260  gc "Learn Grid"
+  261  gs
+  262  ga exercises/d38-01-crud-store/
+  263  gc "Learn Mongo/Mongoose"
+  264  gp
+  265  gs
+  266  ga exercises/d26-02-hit-list/
+  267  gc "React with Axios"
+  268  gp
+  269  gs
+  270  ga exercises/d26-05-react-wars/
+  271  gc "SPA with React Router"
+  272  gp
+  273  ga exercises/d28-02-redux-timer/
+  274  gc "worked on redux timer"
+  275  gp
+  276  gs
+  277  gs
+  278  ga exercises/d30-01-chuck-norris/
+  279  gc "learn Thunk"
+  280  gp
+  281  gs
+  282  ga exercises/d22-03-blog-props/
+  283  gc "Props in React"
+  284  gp
+  285  gs
+  286  gs
+  287  ga exercises/d35-02-bounty-hunter/
+  288  gs
+  289  gc "Bounty Hunter - learning Express"
+  290  gp
+  291  gs
+  292  gs
+  293  ga exercises/d38-02-bounty-hunter-mongo/
+  294  gc "almost finished"
+  295  gp
+  296  ga exercises/d39-01-rock-the-vote/
+  297  gc "started"
+  298  gs
+  299  gp
+  300  gs
+  301  ga exercises/d35-02-bounty-hunter/
+  302  gc "fixed checkbox not saving correctly"
+  303  gp
+  304  gs
+  305  ga exercises/d38-02-bounty-hunter-mongo/
+  306  gc "First full stack app - with MongoDB"
+  307  gp
+  308  gs
+  309  gs
+  310  gs
+  311  exit
+  312  cd client
+  313  npm start
+  314  npm start
+  315  nodemon server.js
+  316  brew services start mongodb
+  317  nodemon server.js
+  318  clear
+  319  nodemon server.js
+  320  clear
+  321  brew services list
+  322  nodemon server.js
+  323  brew services stop mongodb
+  324  killall -15 mongod
+  325  brew services start mongodb
+  326  nodemon server.js
+  327  brew services stop mongodb
+  328  mongo
+  329  mongod
+  330  sudo chmod -R go+w /data/db/
+  331  sudo chmod -R -u student go+w /data/db/
+  332  whoami
+  333  ls -al /data/
+  334  clear
+  335  mongod
+  336  killall -15 mongod
+  337  ps
+  338  ps -a
+  339  brew services list
+  340  brew services start mongodb
+  341  brew services list
+  342  nodemon server.js 
+  343  brew services list
+  344  ls -al /data/
+  345  ls -al /data/db/
+  346  brew services stop mongodb
+  347  ll /data/db/
+  348  brew services list
+  349  mongod
+  350  killall -15 mongod
+  351  ps | grep mongod
+  352  kill -9 3172
+  353  kill 3172
+  354  launchctl stop homebrew.mxcl.mongodb
+  355  brew services list
+  356  mongo
+  357  mongod
+  358  mongo
+  359  brew services start mongodb
+  360  mongo
+  361  mongod
+  362  mongod
+  363  brew services list
+  364  mongo
+  365  mongod
+  366  launchctl list | grep mongo
+  367  launchctl stop -
+  368  launchctl list | grep mongo
+  369  brew services start mongodb
+  370  brew services restart mongodb
+  371  mongo
+  372  which homebrew
+  373  which brew
+  374  brew doctor
+  375  brew services start mongodb
+  376  brew services restart mongodb
+  377  mongo
+  378  which brew
+  379  ls -al /usr/local/
+  380  brew services list
+  381  mongo
+  382  mogo
+  383  mongo
+  384  brew services start mongodb
+  385  brew services restart mongodb
+  386  brew services stop mongodb
+  387  mongo
+  388  clear
+  389  nodemon server.js 
+  390  nodemon server.js 
+  391  whoami
+  392  man awk
+  393  screen -ls
+  394  su student
+  395  whoami
+  396  screen -ls
+  397  screen -h
+  398  man screen
+  399  screen -r
+  400  whoami
+  401  exit
+  402  which screen
+  403  su student
+  404  whoami
+  405  screen
+  406  screen -ls
+  407  exit
+  408  cd client/
+  409  npm start
+  410  nodemon server.js 
+  411  nodemon server.js 
+  412  npm start
+  413  cd ..
+  414  npm i --save @fortawesome/fontawesome
+  415  npm install --save react-fontawesome
+  416  npm install --save @fortawesome/fontawesome-free-brands
+  417  gs
+  418  de
+  419  cd ..
+  420  cd
+  421  da
+  422  gs
+  423  ga projects/d39-01-rock-the-vote/
+  424  gs
+  425  gc "Works but needs more styling"
+  426  gp
+  427  gs
+  428  ga exercises/d39-01-rock-the-vote/*
+  429  gc "moved from exercise to project"
+  430  gp
+  431  gs
+  432  gs
+  433  ga projects/d39-01-rock-the-vote/
+  434  gc "Full stack app with mongo db"
+  435  gp
+  436  gs
+  437  git log
+  438  gs
+  439  clear
+  440  gs
+  441  git diff HEAD exercises/d38-02-bounty-hunter-mongo/client/src/Form.js
+  442  gs
+  443  ga exercises/d38-02-bounty-hunter-mongo/client/src/Form.js 
+  444  gc "First full stack app - with MongoDB"
+  445  gp
+  446  gs
+  447  gs
+  448  clear
+  449  gs
+  450  gs
+  451  ll
+  452  cd projects/
+  453  ll
+  454  mkdir personal-portfolio
+  455  ll
+  456  cd personal-portfolio/
+  457  yarn global add react-static
+  458  react-static create
+  459  ll
+  460  cd ..
+  461  react-static create
+  462  cd personal-portfolio/
+  463  yarn start
+  464  exit
+  465  whoami
+  466  cd dev
+  467  ll
+  468  cd vnsn.github.io/
+  469  ll
+  470  git remote -v
+  471  git checkout
+  472  exit
+  473  de
+  474  cd ..
+  475  ll
+  476  cd ..
+  477  git clone https://github.com/vnsn/vnsn.github.io.git
+  478  mkdir vnsn.github.io
+  479  ll
+  480  cd vnsn.github.io/
+  481  touch README.md
+  482  echo "# vnsn.github.io" >> README.md
+  483  more README.md 
+  484  git init
+  485  ga README.md 
+  486  gc "first commit"
+  487  git remote add origin https://github.com/vnsn/vnsn.github.io.git
+  488  git push -u origin master
+  489  ll
+  490  gs
+  491  ll
+  492  ruby --version
+  493  gem install bundler
+  494  su gem install bundler
+  495  man su
+  496  su student
+  497  exit
+  498  cd client
+  499  npm install --save react-router
+  500  npm install --save react-router-dom
+  501  brew install heroku/brew/heroku
+  502  heroku --version
+  503  heroku login
+  504  ll
+  505  cd dev
+  506  ll
+  507  cd d41-01-full-stack-project/
+  508  ll
+  509  git init
+  510  heroku create
+  511  heroku apps:rename best-advice
+  512  git remote rm heroku
+  513  heroku apps:rename best-worst-advice
+  514  ll
+  515  heroku create best-worst-advice
+  516  heroku
+  517  heroku config
+  518  heroku git:remote -a best-worst-advice
+  519  git push heroku master
+  520  heroku config
+  521  gs
+  522  heroku config:set PROD_MONGODB=mongodb://jenadvice:jenadvice13@ds163689.mlab.com:63689/advice
+  523  heroku config:get MONGODB_URI
+  524  heroku addons:open mongolab
+  525  heroku config:set MONGODB_URI=mongodb://jenadvice:jenadvice13@ds163689.mlab.com:63689/advice
+  526  config:get
+  527  heroku config:get
+  528  heroku config
+  529  git status
+  530  ga ./*
+  531  git commit -m "initial commit"
+  532  git push heroku master
+  533  git status
+  534  git add -A
+  535  git commit -m "initial commit"
+  536  git push heroku master
+  537  git remote
+  538  gs
+  539  gs
+  540  ga client/src/App/Footer.js 
+  541  gc "fixed link"
+  542  gh
+  543  source ~jade/.bash_profile 
+  544  gh
+  545  gs
+  546  ga client/*
+  547  gc "fixed some layout issues"
+  548  gh
+  549  gs
+  550  git remote 
+  551  git init
+  552  gs
+  553  ga -A
+  554  gs
+  555  gc "first commit"
+  556  git remote add origin https://github.com/vnsn/d41-01-full-stack-project.git
+  557  git push -u origin master
+  558  git remote
+  559  gp
+  560  gs
+  561  ga -A
+  562  gc "combined AddForm and EditForm into one Form"
+  563  git push
+  564  gh
+  565  curl -X GET --header "Accept: application/json" --header "Api-Key: 9snrm7z4aqw86rbe5pu92e5y" "https://api.gettyimages.com/v3/search/images/creative?compositions=abstract&exclude_nudity=true&file_types=jpg&graphical_styles=photography&license_models=royaltyfree&number_of_people=none&orientations=Square"
+  566  gs
+  567  ga -A
+  568  gs
+  569  ga -A
+  570  gs
+  571  gc "added new fields"
+  572  gp
+  573  gh
+  574  gs
+  575  ga -A
+  576  gc "new fields are working"
+  577  gp
+  578  gh
+  579  gs
+  580  ga -A
+  581  gc "fixed problem with one sharer field on Form"
+  582  gp
+  583  gs
+  584  gs
+  585  gs
+  586  git branch --helo
+  587  git branch timestamp
+  588  git checkout timestamp 
+  589  git branch
+  590  git status
+  591  git checkout master
+  592  git checkout timestamp 
+  593  git add -A
+  594  git commit -m "timestamp link works""
+  595  git status
+  596  git commit -m "timestamp link works"
+  597  gs
+  598  checkout master
+  599  git checkout master
+  600  git merge timestamp 
+  601  gs
+  602  gp
+  603  git branch
+  604  git branch -D timestamp 
+  605  git branch displayone
+  606  git checkout displayone 
+  607  history >> git-branch-commands.txt

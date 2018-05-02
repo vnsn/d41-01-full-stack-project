@@ -15,7 +15,8 @@ class Form extends Component {
                 imgUrl: props.imgUrl || "",
                 flagged: props.flagged || false,
                 votes: props.votes || 0,
-                sharer: props.sharer || ""
+                sharer: props.sharer || "",
+                category: props.category || ""
                 // comments: props.comments || []
             },
             readyToRedirect: false,
@@ -39,12 +40,24 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.submit(this.state.inputs, ...this.props.args)
+        const inputs = {...this.state.inputs};
+        // for(let key in inputs){
+        //     if(inputs[key] === ""){
+        //         delete inputs[key];
+        //     }
+        //  }
+        if(inputs.category === "") {
+            delete inputs.category;
+        }
+        
+        this.props.submit(inputs, ...this.props.args)
         this.setState(prevState => {
             return {
                 readyToRedirect: true,
             }
         });
+
+        
     }
 
     render() {
@@ -56,9 +69,8 @@ class Form extends Component {
 
         return (
             <form onSubmit={this.handleSubmit} className="item-form">
-
                 <p>
-                    <label htmlFor="type">Best Advice or Worst?</label>
+                    <label htmlFor="type">Best Advice or Worst? <span className="required">*</span></label>
                     <select onChange={this.handleChange} name="type" id="type" value={type}>
                         <option value="none">Pick one</option>
                         <option value="best">Best</option>
@@ -70,10 +82,10 @@ class Form extends Component {
                     <label htmlFor="category">Category:</label>
                     <select onChange={this.handleChange} name="category" id="category" value={category}>
                         <option value="none">Pick one</option>
-                        <option value="leading">Leading</option>
-                        <option value="parents">Parents</option>
-                        <option value="process">Process</option>
-                        <option value="life">Life</option>
+                        <option value="Leading">Leading</option>
+                        <option value="Parents">Parents</option>
+                        <option value="Process">Process</option>
+                        <option default value="Life">Life</option>
                     </select>
                 </p>
 
