@@ -3,7 +3,9 @@ import axios from 'axios';
 const initialState = {
     data: [],
     loading: true,
-    errMsg: ""
+    errMsg: "", 
+    currentOne: {},
+    currentLoading: true
 }
 
 const itemReducer = (state = initialState, action) => {
@@ -24,6 +26,13 @@ const itemReducer = (state = initialState, action) => {
                 ...state,
                 loading: false,
                 data: action.data
+            }
+        case 'GET_ONE':
+            return {
+                //not sure yet
+                ...state,
+                currentLoading: false,
+                currentOne: action.data
             }
         case 'ADD_ITEM':
             return {
@@ -71,6 +80,24 @@ export const getItems = () => {
                 dispatch({
                     type: 'ERR_MSG',
                     errMsg: `GET: ${err}`
+                })
+            })
+    }
+}
+
+export const getOneItem = (id) => {
+    return dispatch => {
+        axios.get('/items/' + id)
+            .then(response => {
+                dispatch({
+                    type: 'GET_ONE',
+                    data: response.data
+                })
+            })
+            .catch(err => {
+                dispatch({
+                    type: 'ERR_MSG',
+                    errMsg: `GET ONE: ${err}`
                 })
             })
     }

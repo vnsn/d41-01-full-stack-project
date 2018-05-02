@@ -13,7 +13,6 @@ body {
     background-color: whitesmoke;
 /* font-family: Verdana, 'Segoe UI', Geneva, sans-serif; */
 font-family: 'Montserrat', sans-serif;
-
 }
 
 h1,
@@ -265,6 +264,7 @@ button:focus {
     /* background-color: #212529; */
     background-color: #990000;
     /* opacity: .7; */
+    box-shadow: 10px 10px 5px #212529;
     color: white;
     display: flex;
     flex-direction: column;
@@ -315,6 +315,11 @@ button:focus {
 .item-category {
     text-align: center;
     /* grid-area: icat; */
+}
+
+.item-image {
+    max-width: 80%;
+    margin: 0 10%;
 }
 
 /* 

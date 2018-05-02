@@ -6,6 +6,7 @@ import List from "./pages/List";
 import About from "./pages/About";
 import AddAdvice from "./pages/AddAdvice";
 import Admin from "../Admin";
+import OneAdvice from "../Content/pages/OneAdvice";
 
 function Content(props) {
     return (
@@ -14,8 +15,8 @@ function Content(props) {
                 <Route exact path="/" component={List} />
                 <Route path="/about" component={About} />
                 <Route path="/add" component={AddAdvice} />
-                <Route path="/admin" component={Admin} />
-                {/* <Route path="/advice/:id" component={Item} /> */}
+                <Route path="/4lSSxy30l43jsTtlcVvWtCEKILUE9UZIvKB3AAIGnjFK2LQ9w0" component={Admin} />
+                <Route path="/items/:id" component={OneAdvice} />
             </Switch>
         </main>
     );
