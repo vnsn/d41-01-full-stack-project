@@ -56,8 +56,6 @@ class Form extends Component {
                 readyToRedirect: true,
             }
         });
-
-        
     }
 
     render() {
