@@ -69,7 +69,7 @@ const itemReducer = (state = initialState, action) => {
 
 export const getItems = () => {
     return dispatch => {
-        axios.get("/items")
+        axios.get("/api/items/")
             .then(response => {
                 dispatch({
                     type: 'GET_ITEMS',
@@ -87,7 +87,7 @@ export const getItems = () => {
 
 export const getOneItem = (id) => {
     return dispatch => {
-        axios.get('/items/' + id)
+        axios.get('/api/items/' + id)
             .then(response => {
                 dispatch({
                     type: 'GET_ONE',
@@ -105,7 +105,7 @@ export const getOneItem = (id) => {
 
 export const addItem = (newItem) => {
     return dispatch => {
-        axios.post('/items/', newItem)
+        axios.post('/api/items/', newItem)
             .then(response => {
                 dispatch({
                     type: 'ADD_ITEM',
@@ -123,7 +123,7 @@ export const addItem = (newItem) => {
 
 export const deleteItem = (id) => {
     return dispatch => {
-        axios.delete('/items/' + id)
+        axios.delete('/api/items/' + id)
             .then(response => {
                 dispatch({
                     type: 'DELETE_ITEM',
@@ -141,7 +141,7 @@ export const deleteItem = (id) => {
 
 export const editItem = (id, editedItem, commentEdit = false) => {
     return dispatch => {
-        let url = '/items/' + id;
+        let url = '/api/items/' + id;
         if (commentEdit) url += "/comments";
         axios.put(url, editedItem)
             .then(response => {
