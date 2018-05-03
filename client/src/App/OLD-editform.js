@@ -34,7 +34,7 @@ class Form extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        this.props.editItem(this.props._id, this.state.inputs);
+        this.props.editItem(this.state.inputs, this.props._id);
     }
 
     render() {

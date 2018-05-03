@@ -27,15 +27,15 @@ class CommentForm extends Component {
         })
     }
 
-    handleSubmitComment(id, itemObj, newComment) {
+    handleSubmitComment(itemObj, id, newComment) {
         itemObj.comments.push(newComment);
-        this.props.editItem(id, itemObj);
+        this.props.editItem(itemObj, id);
     }
 
     render() {
         const { newComment } = this.state.inputs;
         return (
-            <form onSubmit={() => this.handleSubmitComment(this.props._id, this.props, newComment)} className="comment-form">
+            <form onSubmit={() => this.handleSubmitComment(this.props, this.props._id, newComment)} className="comment-form">
                 <input onChange={this.handleChange} name="newComment" value={newComment} placeholder="Add your comment - be nice" />
 
                 <button>Submit</button>

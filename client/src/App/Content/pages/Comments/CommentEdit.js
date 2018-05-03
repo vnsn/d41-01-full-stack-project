@@ -35,7 +35,7 @@ class CommentForm extends Component {
                 return comment;
             })
         };
-        this.props.editItem(id, requestBody, true);
+        this.props.editItem(requestBody, id, true);
     }
 
     render() {

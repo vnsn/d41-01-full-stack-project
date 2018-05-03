@@ -7,33 +7,13 @@ import CommentEdit from './CommentEdit';
 class AdminCommentList extends Component {
     constructor(props) {
         super(props);
-
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmitComment = this.handleSubmitComment.bind(this);
         this.handleDelete = this.handleDelete.bind(this);
     }
 
-    handleChange(event) {
-        const { name, value } = event.target;
-        this.setState(prevState => {
-            return {
-                inputs: {
-                    ...prevState.inputs,
-                    [name]: value
-                }
-            }
-        })
-    }
-
-    handleSubmitComment(id, itemObj, commentText) {
-        itemObj.comments.push(commentText);
-        this.props.editItem(id, itemObj);
-    }
-
-    handleDelete(id, itemObj, delIndex) {
+    handleDelete(itemObj, id, delIndex) {
         let newCommentsArr = itemObj.comments.filter((comment, index) => delIndex !== index);
         let editedItem = { ...itemObj, comments: newCommentsArr };
-        this.props.editItem(id, editedItem);
+        this.props.editItem(editedItem, id);
     }
 
     render() {
@@ -41,8 +21,7 @@ class AdminCommentList extends Component {
             return (
                 <div className="comment" key={comment + index}>
 
-                    <button onClick={() => this.handleDelete(this.props._id, this.props, index)} className="del-button"><i className="fas fa-trash-alt fa-2x fa-fw"></i></button>
-
+                    <button onClick={() => this.handleDelete(this.props, this.props._id, index)} className="del-button"><i className="fas fa-trash-alt fa-2x fa-fw"></i></button>
 
                     <CommentEdit itemObj={this.props} editingIndex={index} editingText={comment} />
 

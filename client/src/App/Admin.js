@@ -8,13 +8,18 @@ import Form from './Form';
 
 
 class Admin extends Component {
+    constructor(props) {
+        super(props);
+        this.handleVote = this.handleVote.bind(this);
+    }
+
     componentDidMount() {
         this.props.getItems();
     }
 
-    handleVote = (id, itemObj, voteNum) => {
+    handleVote = (itemObj, id, voteNum) => {
         itemObj.votes += voteNum;
-        this.props.editItem(id, itemObj);
+        this.props.editItem(itemObj, id);
     }
 
     render() {
@@ -29,13 +34,13 @@ class Admin extends Component {
                 <div className="admin-issue" key={item._id}>
 
                     <div className="votes">
-                        <button onClick={() => this.handleVote(item._id, item, 1)} value="1" className="up-button"><i className="fas fa-caret-up fa-fw fa-2x"></i></button>
+                        <button onClick={() => this.handleVote(item, item._id, 1)} value="1" className="up-button"><i className="fas fa-caret-up fa-fw fa-2x"></i></button>
 
                         <p>
                             {item.votes}
                         </p>
 
-                        <button onClick={() => this.handleVote(item._id, item, -1)} value="-1" className="dn-button"><i className="fas fa-caret-down fa-2x fa-fw"></i></button>
+                        <button onClick={() => this.handleVote(item, item._id, -1)} value="-1" className="dn-button"><i className="fas fa-caret-down fa-2x fa-fw"></i></button>
                     </div>
 
                     <button onClick={() => this.props.deleteItem(item._id)} className="del-button"><i className="fas fa-trash-alt fa-2x fa-fw"></i></button>
