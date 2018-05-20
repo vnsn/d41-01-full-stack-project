@@ -28,7 +28,7 @@ class CommentForm extends Component {
     }
 
     handleEditComment(e, id, itemObj, editingText, editingIndex) {
-        e.preventDefault();
+        // e.preventDefault();
         const requestBody = {
             comments: itemObj.comments.map((comment, i)=> {
                 if(i === editingIndex) return editingText;

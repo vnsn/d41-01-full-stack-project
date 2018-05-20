@@ -41,11 +41,6 @@ class Form extends Component {
     handleSubmit(event) {
         event.preventDefault();
         const inputs = {...this.state.inputs};
-        // for(let key in inputs){
-        //     if(inputs[key] === ""){
-        //         delete inputs[key];
-        //     }
-        //  }
         if(inputs.category === "") {
             delete inputs.category;
         }

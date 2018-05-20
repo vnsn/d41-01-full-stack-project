@@ -1,6 +1,6 @@
 Best or Worst Advice
 ====================
-Jennifer Evenson
+By Jennifer Evenson
 
 Objective
 =========
@@ -32,6 +32,24 @@ Functionality
     * The individual advice page shows the photo at the URL that was optionally entered by the user. If no URL was entered, that html element isn't rendered on the page.
 * Displaying the list of advice blocks on the home page uses a two level sort - first by most votes and then in reverse date order (newest first). (At this time, only the administrator can see how many "votes" each entry has since only the administrator can change that.)
 
+Technologies Used
+=================
+* Front End: HTML5, CSS3, JavaScript, React, React Router, Redux + Thunk, Axios
+* Back End: Express, MongoDB, Mongoose
+* Hosted at Heroku with the database at MLab
+
+Challenges / Lessons Learned
+============================
+* There is one Form component that handles both adding and editing versus having one component for each, as I had been taught.
+* I wanted to keep all the data I'd loaded into my local Mongo database, so I spent some time learning how to export and import JSON files into Mongo.
+
+Mobile Views
+============
+
+| Main Mobile View | Add Advice | Individual Advice | Admin Page| 
+| :---: | :---: | :---: | :---: |
+| <img alt="main mobile view" src="readme-images/mobile-list.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-add.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-individual.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-admin.png" width="200" style="border: 1px solid black" /> |
+
 Desktop Views
 =============
 ## Home page
@@ -46,24 +64,6 @@ Desktop Views
 ## Admin Page
 ![Admin Page](readme-images/desktop-admin.png)
 
-Mobile Views
-============
-
-| Main Mobile View | Add Advice | Individual Advice | Admin Page| 
-| :---: | :---: | :---: | :---: |
-| <img alt="main mobile view" src="readme-images/mobile-list.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-add.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-individual.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-admin.png" width="200" style="border: 1px solid black" /> |
-
-Technologies Used
-=================
-* Front End: HTML5, CSS3, JavaScript, React, React Router, Redux + Thunk, Axios
-* Back End: Express, MongoDB, Mongoose
-* Hosted at Heroku with the database at MLab
-
-Challenges / Lessons Learned
-============================
-* There is one Form component that handles both adding and editing versus having one component for each, as I had been taught.
-* I wanted to keep all the data I'd loaded into my local Mongo database, so I spent some time learning how to export and import JSON files into Mongo.
-
 Ideas for Improvements
 ======================
 * User authentication so users can edit / delete their own entries and edit / delete their comments. Would also allow users to upvote and downvote other entries, and save favorites. 
@@ -71,7 +71,6 @@ Ideas for Improvements
 * Allow users to "flag as inappropriate" - advice and comments.
 * Allow users to add new categories of advice, or at least suggest new categories. 
 * Include the photo on the home page (list of advice) rather than just on the individual advice page.
-
 
 Inspiration for the Project
 ===========================

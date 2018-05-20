@@ -45,14 +45,7 @@ class Admin extends Component {
 
                     <button onClick={() => this.props.deleteItem(item._id)} className="del-button"><i className="fas fa-trash-alt fa-2x fa-fw"></i></button>
 
-                  <Form submit={this.props.editItem} {...item} args={[item._id]} />
-
-                    {/* <Form submit={this.props.editItem} inputs={item} args={[this.props._id]} redirect path="/">
-                        <input name=""type="text"/>
-                        <input type="text"/>
-                        <input type="text"/>
-                    </Form> */}
-
+                    <Form submit={this.props.editItem} {...item} args={[item._id]} />
                     <AdminCommentList {...item} />
 
                 </div>
