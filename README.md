@@ -53,7 +53,7 @@ Mobile Views
 Desktop Views
 =============
 ## Home page
-![Home Page](readme-images/desktop-list.png)
+![Home Page](readme-images/desktop-list-sm.png)
 
 ## Add Advice
 ![Add Advice](readme-images/desktop-add.png)
