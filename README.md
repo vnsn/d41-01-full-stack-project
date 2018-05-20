@@ -48,7 +48,7 @@ Mobile Views
 
 | Main Mobile View | Add Advice | Individual Advice | Admin Page| 
 | :---: | :---: | :---: | :---: |
-| <img alt="main mobile view" src="readme-images/mobile-list.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-add.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-individual.png" width="200" style="border: 1px solid black" /> | <img alt="main mobile view" src="readme-images/mobile-admin.png" width="200" style="border: 1px solid black" /> |
+| <img alt="main mobile view" src="readme-images/mobile-list.png" width="200" style="border: 1px solid black" /> | <img alt="add advice mobile view" src="readme-images/mobile-add.png" width="200" style="border: 1px solid black" /> | <img alt="individual advice mobile view" src="readme-images/mobile-individual.png" width="200" style="border: 1px solid black" /> | <img alt="admin page mobile view" src="readme-images/mobile-admin.png" width="200" style="border: 1px solid black" /> |
 
 Desktop Views
 =============
